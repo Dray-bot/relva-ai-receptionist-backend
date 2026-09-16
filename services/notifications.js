@@ -7,9 +7,7 @@ function buildNewLeadEmail({
 
   const appointmentText =
     lead.appointmentBooked
-      ? formatAppointment(
-          lead
-        )
+      ? formatAppointment(lead)
       : "Not booked";
 
   const text = [
@@ -132,11 +130,9 @@ function formatAppointment(lead) {
     timeStyle: "short"
   };
 
-  if (
-    lead.appointmentTimeZone
-  ) {
+  if (lead.appointmentTimezone) {
     options.timeZone =
-      lead.appointmentTimeZone;
+      lead.appointmentTimezone;
   }
 
   try {

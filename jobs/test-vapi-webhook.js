@@ -1,7 +1,7 @@
 require("dotenv").config();
 
 const WEBHOOK_URL =
-  "http://localhost:3000/webhooks/vapi";
+  "https://relva-ai-receptionist-backend.onrender.com/webhooks/vapi";
 
 const WEBHOOK_SECRET =
   process.env.VAPI_WEBHOOK_SECRET;
